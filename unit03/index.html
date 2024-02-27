@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit03 - formularios</title>
+    </head>
+    <body>
+    <h2>Elementos de um formulario</h2>
+
+        <form action="" method="post">
+            Nome: <input type="text" name="Nome"/><br/>
+            Senha: <input type="password" name="Senha"/><br/>
+            <hr/>
+            O que é você?<br/>
+            <input type="radio" name="raça" value="Humano"/>Humano<br/>
+            <input type="radio" name="raça" value="Transformers"/>Transformers<br/>
+            <input type="radio" name="raça" value="Paralelepipeedo"/>Paralelepipeedo<br/>
+            <input type="radio" name="raça" value="Fanta asmatico" checked/>Fanta asmatico<br/>
+            <hr/>
+
+            Escolha suas marca favoritas:<br/>
+            <input type="checkbox" name="marca1" value="Apple"/>Apple<br/>
+            <input type="checkbox" name="marca2" value="Samsumg"/>Samsumg<br/>
+            <input type="checkbox" name="marca3" value="LG"/>LG<br/>
+            <input type="checkbox" name="marca4" value="Xiaomi"/>Xiaomi<br/>
+            <input type="checkbox" name="marca5" value="Nike"/>Nike<br/>
+            <input type="checkbox" name="marca6" value="Adidas"/>Samsumg<br/>
+            <input type="checkbox" name="marca7" value="Converse"/>LG<br/>
+            <input type="checkbox" name="marca8" value="Vans"/>Xiaomi<br/>
+            <hr/>
+
+            escolha uma cor:<br/>
+            <input type="color" name="cor"/><br/>
+            <hr/>
+
+            Dia do seu nascimento:<br/>
+            <input type="date" name="data"/><br/>
+
+            Data atual:<br/>
+            <input type="datetime-local" name="data1"/><br/>
+            <hr/>
+
+            E-Mail: <input type="email" name="email"/> <br/>
+            <hr/>
+
+            Arquivo:<br/>
+            <input type="file" name="Arquivo"/> <br/>
+            <hr/>
+
+            numero:
+            <input type="range" name="pontos" mim="0" max="50"/><br/>
+            <hr/>
+            numero:
+            <input type="number" name="quantia"/><br/>
+            <hr/>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Redefinir"/>
+            <hr/>
+
+            comida<br/>
+            <select name="comida">
+                <option value="Pizza">Pizza</option>
+                <option value="Pastel">Pastel</option>
+                <option value="Esfiha">esfiha</option>
+                <option value="Lasanha">Lasanha</option>
+            </select>
+            <hr/>
+
+            escreva uma mensagem:<br/>
+            <textarea name="mensagem" rows="10" cols="30">escreva aqui</textarea> 
+            <hr/>
+
+            <button type="button" onclick="alert('ola mundo')">Clique aqui</button>
+
+        </form>
+    
+    </body>
+</html>
