@@ -1,0 +1,16 @@
+h1 {
+    color: rgb(255, 166, 2);
+    text-align: center;
+}
+
+#test1 {
+    color: rgb(255, 2, 255);
+}
+
+.teste2 {
+    background-color: rgb(2, 255, 183);
+}
+
+body {
+    background-color: rgb(137, 137, 137);
+}
