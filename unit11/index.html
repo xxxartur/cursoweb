@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>unit 11 - inputs</title>
+    </head>
+    <body>
+        <div id="if">
+            <input type="password" id="senha">
+            <button
+                onclick="
+                    var  pass = document.getElementById('senha').value
+                    console.log(pass)
+                "
+            >
+                enter
+            </button>
+        </div>
+
+        <div id="if2">
+            <input type="password" id="senha2">
+            <button
+                onclick="
+                    var  pass = document.getElementById('senha2').value
+                    if(pass === '123456'){
+                        alert('bem-vindo')
+                    }
+                    else{
+                        alert('tente novamente')
+                    }
+                "
+            >
+                enter
+            </button>
+        </div>
+        
+        <div>
+            <select id="opcoes">
+                <option value="1">Opção 1</option>
+                <option value="2">Opção 2</option>
+                <option value="3">Opção 3</option>
+            </select>
+        </div>
+
+        <button 
+            onclick=" 
+                var op = document.getElementById('opcoes').value
+                console.log(op)
+                switch (op){
+                    case '1':
+                        alert('1')
+                        break
+                    case '2':
+                        alert('2')
+                        break
+                    case '3':
+                        alert('3')
+                        break
+                    default:
+                        alert('nada')
+                }
+            ">
+            selecionar
+        </button>
+
+        <h3>for</h3>
+
+        <div id="for">
+            <input id="qtd">
+            <button
+            onclick="
+                var qtdinput = document.getElementById('qtd').value
+                var htmlfinal =''
+
+                for(var i=0; i< qtdinput; i++){
+                    htmlfinal += 'nome: <input><br><br>'
+                }
+                document.getElementById('nomes').innerHTML = htmlfinal
+                
+            ">
+                criar
+            </button>
+
+            <div id="nomes"></div>
+        </div>
+
+        <h3>while</h3>
+
+        <div id="while">
+            <button onclick="">
+                gerar
+            </button>
+
+            <div id="numeros"></div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
